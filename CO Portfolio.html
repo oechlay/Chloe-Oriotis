@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CO Portfolio Style.css">
+    <title>Chloe Oriotis</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- Your portfolio content goes here -->
+        <h2>Hi, I'm</h2>
+        <h1>Chloe</h1>
+        <h3>Engineer, designer, leader.</h3>
+        <!-- Add more content as needed -->
+        <div id="about" class="content">
+            <div class="content" id="aboutContent">
+                <!-- Content that should appear only when scrolled to -->
+                <h4>What I'm all about</h4>
+            </div>
+        </div>
+        <div id="experiences" class="section">
+            <!-- Portfolio Section Content -->
+            <h2>Experience</h2>
+            <!-- Add your portfolio items here -->
+            <!-- Table with images -->
+            <div class="image-table">
+                <table>
+                    <!-- <tr>
+            <td><img src="redetec.jpg" alt="Image 1"></td>
+            <td><img src="inertia.png" alt="Image 2"></td>
+            <td><img src="multimatic.png" alt="Image 3"></td>
+        </tr> -->
+
+                    <tr>
+                        <td><img src="redetec.jpg" alt="Image 1" onclick="expandTable('secondTable')"></td>
+                        <td><img src="inertia.png" alt="Image 2" onclick="expandTable('thirdTable')"></td>
+                        <td><img src="multimatic.png" alt="Image 3" onclick="expandTable('fourthTable')"></td>
+                        <!-- Add more cells with images as needed -->
+                    </tr>
+                </table>
+            </div>
+            <!-- "Experience" Expanded Tables -->
+            <div class="image-table" id="secondTable" style="display: none;">
+                <table>
+                    <tr>
+                        <td><img src="redetec.jpg" alt="Image 4" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 5" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 6" class="expanded-image"></td>
+                        <!-- Add more cells with images as needed -->
+                    </tr>
+                </table>
+                <!-- Text below the expanded table -->
+                <p>This is the expanded table's text content.</p>
+            </div>
+
+            <div class="image-table" id="secondTable" style="display: none;">
+                <table>
+                    <tr>
+                        <td><img src="redetec.jpg" alt="Image 4" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 5" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 6" class="expanded-image"></td>
+                        <!-- Add more cells with images as needed -->
+                    </tr>
+                </table>
+                <!-- Text below the expanded table -->
+                <p>This is the expanded table's text content.</p>
+            </div>
+
+            <div class="image-table" id="thirdTable" style="display: none;">
+                <table>
+                    <tr>
+                        <td><img src="inertia.png" alt="Image 4" class="expanded-image"></td>
+                        <td><img src="inertia.png" alt="Image 5" class="expanded-image"></td>
+                        <td><img src="inertia.png" alt="Image 6" class="expanded-image"></td>
+                        <!-- Add more cells with images as needed -->
+                    </tr>
+                </table>
+                <!-- Text below the expanded table -->
+                <p>This is the expanded table's text content.</p>
+            </div>
+
+            <div class="image-table" id="fourthTable" style="display: none;">
+                <table>
+                    <tr>
+                        <td><img src="multimatic.png" alt="Image 4" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 5" class="expanded-image"></td>
+                        <td><img src="redetec.jpg" alt="Image 6" class="expanded-image"></td>
+                        <!-- Add more cells with images as needed -->
+                    </tr>
+                </table>
+                <!-- Text below the expanded table -->
+                <p>This is the expanded table's text content.</p>
+            </div>
+
+
+        </div>
+
+        <div id="projects" class="section">
+            <!-- About Section Content -->
+            <h2>Projects</h2>
+            <p>XXXXX</p>
+
+        </div>
+
+        <div id="extras" class="section">
+            <!-- About Section Content -->
+            <h2>Extras</h2>
+            <p>Chronically curious and hunting for fun</p>
+
+        </div>
+
+
+
+        <!-- Add more sections as needed -->
+
+        <div class="sticky-menu">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experiences">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#extras">Extras</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <!-- Add more menu items for each section -->
+            </ul>
+        </div>
+
+        <div id="contact" class="footer">
+            <!-- Footer Content -->
+            &copy; 2023 Your Portfolio
+        </div>
+
+
+        <script src="CO Portfolio Java.js"></script> <!-- Add your JavaScript file for smooth scrolling -->
+</body>
+
+</html>

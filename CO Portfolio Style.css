@@ -1,0 +1,215 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url('Beach\ 1.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-right: 0%;
+
+}
+
+/* .background-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-image: url('Beach 1.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+.content {
+    /* Your content styling goes here */
+    padding-left: 3%;
+    /* Adjust as needed */
+    padding-top: 3%;
+    padding-bottom: 50vh;
+    margin-top: 0;
+    /* Remove any top margin that might be pushing it down */
+    position: relative;
+    z-index: 1;
+    /* Ensure content appears above the background */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+
+}
+
+.content h1 {
+    font-size: 3em;
+    /* Set the font size for the heading */
+    color: #ffffff;
+    /* Set the text color for the heading */
+    padding-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.content h2 {
+    font-size: 1em;
+    /* Set the font size for the heading */
+    color: #ffffff;
+    /* Set the text color for the heading */
+}
+
+.content h3 {
+    font-size: 1.2em;
+    /* Set the font size for paragraphs */
+    color: #ffffff;
+    /* Set the text color for paragraphs */
+    margin-bottom: 20px;
+    /* Add some bottom margin for spacing */
+    padding-left: 7%
+}
+
+.content h4 {
+    font-size: 1.2em;
+    /* Set the font size for paragraphs */
+    color: #ffffff;
+    /* Set the text color for paragraphs */
+    margin-bottom: 20px;
+    margin-top: 10vh;
+    /* Add some bottom margin for spacing */
+    padding-left: 10%
+}
+
+.section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #181818; 
+}
+
+/* Hide the aboutContent initially */
+#aboutContent {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Display the aboutContent when the 'visible' class is added */
+#aboutContent.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section h1,
+.section h2,
+.section p {
+    margin: 0;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.sticky-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sticky-menu li {
+    margin-bottom: 10px;
+}
+
+.sticky-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sticky-menu a:hover {
+    color: #007bff;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-table p {
+    margin-top: 10px; 
+    font-size: 20px; 
+    color: #181818; 
+    text-align: center;
+    background-color: #f5f5dc;
+    padding: 10px;
+    border-radius: 10px; /* Example border radius, change as needed */
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #00000000;
+}
+
+td {
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+    /* cursor: pointer; Add cursor pointer to indicate clickability */
+}
+
+img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Add styles for the expanded table if needed */
+#secondTable, #thirdTable, #fourthTable{
+    margin-top: 10vh;
+    width: 80%
+}
+
+.expanded-image {
+    width: 20vw;
+    max-height: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Example border radius, change as needed */
+}
